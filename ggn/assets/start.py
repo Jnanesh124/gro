@@ -55,8 +55,8 @@ async def start(event):
     user_id = event.sender_id
     collection.update_one({"user_id": user_id}, {"$set": {"user_id": user_id}}, upsert=True)
     buttons = [
-        [Button.url("Join Channel", url="https://t.me/devggn")],
-        [Button.url("Contact Me", url="https://t.me/ggnhere")],
+        [Button.url("🫵 update channel 🫵", url="https://t.me/ROCKERSBACKUP")],
+        [Button.url("💬 Bot Owner 💬", url="https://t.me/alonekingjnanesh")],
     ]
     await gagan.send_file(
         event.chat_id,
@@ -108,7 +108,7 @@ async def get_registered_users_command(event):
     os.remove(filename)  # Remove the temporary file after sending
 
 S = "/start"
-START_PIC = "https://graph.org/file/1dfb96bd8f00a7c05f164.gif"
+START_PIC = "https://telegra.ph/file/4b33f0aeaadd8672a8ca6.jpg"
 TEXT = "Hey! I am Advance Content Saver Bot, do login in bot by /login and start saving from public/private channels/groups via sending post link.\n\n👉🏻 Execute /batch for bulk process upto 1K files range."
 
 
