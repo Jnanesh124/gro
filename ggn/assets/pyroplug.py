@@ -41,7 +41,7 @@ async def copy_message_with_chat_id(client, sender, chat_id, message_id):
         for word, replace_word in replacements.items():
             final_caption = final_caption.replace(word, replace_word)
         
-        caption = f"{final_caption}\n\n__**{custom_caption}**__" if custom_caption else f"{final_caption}\n\n__**[Team SPY](https://t.me/devggn)**__"
+        caption = f"{final_caption}\n\n__**{custom_caption}**__" if custom_caption else f"{final_caption}\n\n__**[Team ROCKERSBACKUP](https://t.me/ROCKERSBACKUP)**__"
         
         if msg.media:
             if msg.media == MessageMediaType.VIDEO:
@@ -112,7 +112,7 @@ async def send_video_with_chat_id(client, sender, path, caption, duration, hi, w
             progress=progress_for_pyrogram,
             progress_args=(
                 client,
-                '**__Uploading: [Team SPY](https://t.me/devggn)__**\n ',
+                '**__Uploading: [Team ROCKERSBACKUP](https://t.me/ROCKERSBACKUP)__**\n ',
                 upm,
                 time.time()
             )
@@ -146,7 +146,7 @@ async def send_document_with_chat_id(client, sender, path, caption, thumb_path, 
             progress=progress_for_pyrogram,
             progress_args=(
                 client,
-                '**__Uploading:__**\n**__Bot made by [Team SPY](https://t.me/devggn)__**',
+                '**__Uploading:__**\n**__Bot made by [Team ROCKERSBACKUP](https://t.me/ROCKERSBACKUP)__**',
                 upm,
                 time.time()
             )
@@ -365,7 +365,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                 await client.edit_message_text(sender, edit_id, 'poll media cant be saved')
                 return 
             edit = await client.edit_message_text(sender, edit_id, "__**Trying to Download**...")
-            file = await userbot.download_media(msg, progress=progress_for_pyrogram, progress_args=(client, "**__Unrestricting__: __[Team SPY](https://t.me/devggn)__**\n ", edit, time.time()))            # Retrieve user's custom renaming preference if set, default to '@devggn' otherwise
+            file = await userbot.download_media(msg, progress=progress_for_pyrogram, progress_args=(client, "**__Unrestricting__: __[Team ROCKERSBACKUP](https://t.me/ROCKERSBACKUP)__**\n ", edit, time.time()))            # Retrieve user's custom renaming preference if set, default to '@devggn' otherwise
             if not file:
               await client.send_message(sender, "Failed to download the media.")
               return None
@@ -432,7 +432,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                 replacements = load_replacement_words(sender)
                 for word, replace_word in replacements.items():
                     final_caption = final_caption.replace(word, replace_word)
-                caption = f"{final_caption}\n\n__**{custom_caption}**__" if custom_caption else f"{final_caption}\n\n__**[Team SPY](https://t.me/devggn)**__"
+                caption = f"{final_caption}\n\n__**{custom_caption}**__" if custom_caption else f"{final_caption}\n\n__**[Team ROCKERSBACKUP](https://t.me/ROCKERSBACKUP)**__"
                 await send_video_with_chat_id(client, sender, path, caption, duration, hi, wi, thumb_path, upm, msg.pinned_message)
             elif str(file).split(".")[-1] in ['jpg', 'jpeg', 'png', 'webp']:
                 if file_n != '':
@@ -469,14 +469,14 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                 replacements = load_replacement_words(sender)
                 for word, replace_word in replacements.items():
                     final_caption = final_caption.replace(word, replace_word)
-                caption = f"{final_caption}\n\n__**{custom_caption}**__" if custom_caption else f"{final_caption}\n\n__**[Team SPY](https://t.me/devggn)**__"
+                caption = f"{final_caption}\n\n__**{custom_caption}**__" if custom_caption else f"{final_caption}\n\n__**[Team ROCKERSBACKUP](https://t.me/ROCKERSBACKUP)**__"
                 await send_document_with_chat_id(client, sender, path, caption, thumb_path, upm, msg.pinned_message)
                     
             os.remove(file)
             await upm.delete()
             return None
         except (ChannelBanned, ChannelInvalid, ChannelPrivate, ChatIdInvalid, ChatInvalid):
-            await client.edit_message_text(sender, edit_id, "Bot is not in that channel/group \nsend the invite or add session vioa command /addsession link so that bot can join the channel\n\nTo generate session you can use our official bot - @stringsessionAK47bot")
+            await client.edit_message_text(sender, edit_id, "Bot is not in that channel/group \nsend the invite or add session vioa command /addsession link so that bot can join the channel\n\nTo generate session you can use")
             return None
     else:
         edit = await client.edit_message_text(sender, edit_id, "Cloning.")
@@ -633,7 +633,7 @@ async def settings_command(event):
         [Button.inline("Remove Words", b'delete')],
         [Button.inline("Login", b'addsession'), Button.inline("Logout", b'logout')],
         [Button.inline("Set Thumbnail", b'setthumb'), Button.inline("Remove Thumbnail", b'remthumb')],
-        [Button.url("Report Errors", "https://t.me/devggn")]
+        [Button.url("Report Errors", "https://t.me/alonekingjnanesh")]
     ]
     
     await gf.send_file(
