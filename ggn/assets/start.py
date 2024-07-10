@@ -125,7 +125,7 @@ PRE_TEXT = """💰 **Premium Price**: Starting from $2 or 200 INR accepted via *
 async def plan_command(event):
     # Creating inline keyboard with buttons
     buttons = [
-        [Button.url("Send Gift Card Code", url="https://t.me/ttonehelpbot")]
+        [Button.url("Send Gift Card Code", url="https://t.me/alonekingjnanesh")]
     ]
 
     # Sending photo with caption and buttons
@@ -148,8 +148,8 @@ TERM_TEXT = """📜 **Terms and Conditions** 📜\n
 async def term_command(event):
     # Creating inline keyboard with buttons
     buttons = [
-        [Button.url("Query?", url="https://t.me/ttonehelpbot"),
-         Button.url("Channel", url="https://telegram.dog/devggn")]
+        [Button.url("Query?", url="https://t.me/alonekingjnanesh"),
+         Button.url("Channel", url="https://telegram.dog/ROCKERSBACKUP")]
     ]
 
     # Sending photo with caption and buttons
@@ -160,7 +160,7 @@ async def term_command(event):
         buttons=buttons
     )
 
-REPO_URL = "https://github.com/devgaganin/Save-Restricted-Content-Bot-Repo"
+REPO_URL = "https://telegram.dog/ROCKERSBACKU"
 
 HELP_TEXT = """Here are the available commands:
 
@@ -247,7 +247,7 @@ async def youtube_dl_command(_, message):
 
             # Get video metadata
             metadata = video_metadata(original_file)
-            caption = f"{video_info['title']}\n\n__**Powered by [Advance Content Saver Bot](https://t.me/advance_content_saver_bot)**__"  # Set caption to the title of the video
+            caption = f"{video_info['title']}\n\n__**Powered by [ROCKERS-BACKUP](https://t.me/ROCKERSBACKUP)**__"  # Set caption to the title of the video
             
             # Send the video file and thumbnail
             ggn = message.chat.id
